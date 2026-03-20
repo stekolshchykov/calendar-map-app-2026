@@ -4,6 +4,7 @@ import KerryMap from './components/Map';
 import Sidebar from './components/Sidebar';
 import StrategyModal from './components/StrategyModal';
 import { getLocationsForDate } from './utils';
+import { fetchWeatherForecast } from './weather';
 import { Info } from 'lucide-react';
 
 // Set today strictly in 2026 for context
@@ -14,12 +15,17 @@ function App() {
   const [locations, setLocations] = useState([]);
   const [activeLocationId, setActiveLocationId] = useState(null);
   const [isStrategyModalOpen, setIsStrategyModalOpen] = useState(false);
+  const [weatherData, setWeatherData] = useState({});
+
+  useEffect(() => {
+    fetchWeatherForecast().then(data => setWeatherData(data));
+  }, []);
 
   useEffect(() => {
     if (selectedDate) {
       const locs = getLocationsForDate(selectedDate);
       setLocations(locs);
-      setActiveLocationId(null); // Reset highlighted location
+      setActiveLocationId(null);
     }
   }, [selectedDate]);
 
@@ -46,7 +52,11 @@ function App() {
             activeLocationId={activeLocationId}
             onLocationSelect={setActiveLocationId}
           />
-          <Calendar selectedDate={selectedDate} onSelectDate={setSelectedDate} />
+          <Calendar 
+            selectedDate={selectedDate} 
+            onSelectDate={setSelectedDate}
+            weatherData={weatherData}
+          />
         </div>
 
         <div className="right-panel">
@@ -55,6 +65,7 @@ function App() {
             locations={locations}
             activeLocationId={activeLocationId}
             onLocationSelect={setActiveLocationId}
+            weatherData={weatherData}
           />
         </div>
       </div>
