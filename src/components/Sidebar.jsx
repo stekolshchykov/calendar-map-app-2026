@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { format } from 'date-fns';
-import { MapPin, Users, Info, CloudRain, Truck } from 'lucide-react';
+import { MapPin, Users, Info, CloudRain, Truck, Search, Filter } from 'lucide-react';
 
 const Sidebar = ({ selectedDate, locations, activeLocationId, onLocationSelect }) => {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [filterType, setFilterType] = useState('all'); // 'all', 'event', 'market'
+    const [topRatedOnly, setTopRatedOnly] = useState(false);
+
     const getRiskColor = (risk) => {
         if (risk === 'very_high' || risk.includes('Очень высокий')) return '#f85149';
         if (risk === 'high' || risk.includes('Высокий')) return '#ff7b72';
@@ -24,19 +28,66 @@ const Sidebar = ({ selectedDate, locations, activeLocationId, onLocationSelect }
         return '#f85149'; // poor
     };
 
+    // Apply filters
+    const filteredLocations = locations.filter(item => {
+        const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            item.location.toLowerCase().includes(searchTerm.toLowerCase());
+
+        const matchesType = filterType === 'all' ? true : item.itemType === filterType;
+
+        const matchesTopRated = topRatedOnly ? (item.food_truck_fit_score && item.food_truck_fit_score >= 85) : true;
+
+        return matchesSearch && matchesType && matchesTopRated;
+    });
+
     return (
         <div className="glass-panel" style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
             <div className="sidebar-header">
                 <h2>{selectedDate ? format(selectedDate, 'MMMM d, yyyy') : 'Select a Date'}</h2>
                 <p>
                     {locations.length > 0
-                        ? `${locations.length} top places to visit today`
+                        ? `${locations.length} total places to visit today`
                         : 'No major events or markets recorded on this day.'}
                 </p>
             </div>
 
+            {locations.length > 0 && (
+                <div className="sidebar-filters">
+                    <div className="search-bar">
+                        <Search size={16} className="search-icon" />
+                        <input
+                            type="text"
+                            placeholder="Search event or town..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="filter-controls">
+                        <select
+                            value={filterType}
+                            onChange={(e) => setFilterType(e.target.value)}
+                            className="filter-select"
+                        >
+                            <option value="all">All Types</option>
+                            <option value="event">Events Only</option>
+                            <option value="market">Markets Only</option>
+                        </select>
+
+                        <label className="checkbox-label" title="Show only events with Fit Score 85+">
+                            <input
+                                type="checkbox"
+                                checked={topRatedOnly}
+                                onChange={(e) => setTopRatedOnly(e.target.checked)}
+                            />
+                            <span className="checkbox-text">Top Rated Only</span>
+                        </label>
+                    </div>
+                </div>
+            )}
+
             <div className="locations-list">
-                {locations.map(item => (
+                {filteredLocations.map(item => (
                     <div
                         key={item.id}
                         className={`location-item ${activeLocationId === item.id ? 'active' : ''}`}
@@ -82,6 +133,12 @@ const Sidebar = ({ selectedDate, locations, activeLocationId, onLocationSelect }
                         )}
                     </div>
                 ))}
+
+                {locations.length > 0 && filteredLocations.length === 0 && (
+                    <div className="empty-state">
+                        No events match your current filters on this day.
+                    </div>
+                )}
 
                 {locations.length === 0 && selectedDate && (
                     <div className="empty-state">
