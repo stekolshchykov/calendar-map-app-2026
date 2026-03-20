@@ -54,7 +54,7 @@ const MapBoundsAggregator = ({ locations, activeLocationId }) => {
     return null;
 };
 
-const Map = ({ locations, activeLocationId, onLocationSelect }) => {
+const KerryMap = ({ locations, activeLocationId, onLocationSelect }) => {
     const kerryCenter = [52.1545, -9.5669];
 
     // deduplicate markers by location
@@ -110,4 +110,4 @@ const Map = ({ locations, activeLocationId, onLocationSelect }) => {
     );
 };
 
-export default Map;
+export default KerryMap;

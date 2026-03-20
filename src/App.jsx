@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from './components/Calendar';
-import Map from './components/Map';
+import KerryMap from './components/Map';
 import Sidebar from './components/Sidebar';
 import StrategyModal from './components/StrategyModal';
 import { getLocationsForDate } from './utils';
@@ -41,7 +41,7 @@ function App() {
 
       <div className="main-content">
         <div className="left-panel">
-          <Map
+          <KerryMap
             locations={locations}
             activeLocationId={activeLocationId}
             onLocationSelect={setActiveLocationId}
