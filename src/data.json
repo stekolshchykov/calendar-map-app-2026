@@ -718,6 +718,97 @@
             },
             "weather_risk": "very_high",
             "food_truck_fit_score": 85
+        },
+        {
+            "id": "e53",
+            "name": "Wander Wild Festival",
+            "start_date": "2026-04-17",
+            "end_date": "2026-04-19",
+            "location": "Killarney",
+            "crowd": { "scale": "M-L" },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 90,
+            "source": "discoverireland.ie"
+        },
+        {
+            "id": "e54",
+            "name": "Wild Mind Festival",
+            "start_date": "2026-04-24",
+            "end_date": "2026-04-26",
+            "location": "Fenit",
+            "crowd": { "scale": "S-M" },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 70,
+            "source": "travelextra.ie"
+        },
+        {
+            "id": "e55",
+            "name": "Kerry Camino Walking Festival",
+            "start_date": "2026-05-01",
+            "end_date": "2026-05-03",
+            "location": "Tralee",
+            "crowd": { "scale": "M" },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 75,
+            "source": "discoverireland.ie"
+        },
+        {
+            "id": "e56",
+            "name": "May the 4th Sci-Fi Film Festival & Comic Con",
+            "start_date": "2026-05-01",
+            "end_date": "2026-05-04",
+            "location": "Portmagee",
+            "crowd": { "scale": "S-M" },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 75,
+            "source": "discoverireland.ie"
+        },
+        {
+            "id": "e57",
+            "name": "Tralee Food Festival",
+            "start_date": "2026-05-16",
+            "end_date": "2026-05-17",
+            "location": "Tralee",
+            "crowd": { "scale": "M-L" },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 95,
+            "source": "discoverkerry.com"
+        },
+        {
+            "id": "e58",
+            "name": "GAA: Kerry vs Monaghan (Allianz FL Div 1)",
+            "start_date": "2026-03-01",
+            "end_date": "2026-03-01",
+            "location": "Killarney (Fitzgerald Stadium)",
+            "crowd": { "scale": "L", "known_value": 15000 },
+            "weather_risk": "high",
+            "food_truck_fit_score": 90,
+            "source": "gaa.ie"
+        },
+        {
+            "id": "e59",
+            "name": "GAA: Kerry vs Mayo (Allianz FL Div 1)",
+            "start_date": "2026-03-14",
+            "end_date": "2026-03-14",
+            "location": "Tralee (Austin Stack Park)",
+            "crowd": { "scale": "L", "known_value": 10000 },
+            "weather_risk": "high",
+            "food_truck_fit_score": 90,
+            "time": "16:00",
+            "source": "gaa.ie"
+        },
+        {
+            "id": "e60",
+            "name": "Killarney House parkrun (every Saturday 9:30am)",
+            "start_date": "2026-01-03",
+            "end_date": "2026-12-26",
+            "location": "Killarney",
+            "crowd": { "scale": "S" },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 60,
+            "time": "09:30",
+            "recurring": "every_saturday",
+            "source": "parkrun.ie"
         }
     ]
 }

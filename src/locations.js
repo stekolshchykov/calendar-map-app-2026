@@ -9,7 +9,7 @@ export const LOCATION_COORDS = {
     "(Kerry)": [52.1545, -9.5669],
     "(по графству)": [52.1545, -9.5669],
     "South Kerry (Skellig Coast)": [51.8365, -10.2625],
-    "Castleisland": [52.2323, -9.4627],
+    "Castleisland": [52.2314, -9.4617],
     "Dingle Peninsula": [52.1706, -10.1500],
     "Killarney / Ring of Kerry": [51.9360, -9.7890],
     "Listowel": [52.4468, -9.4842],
@@ -21,5 +21,8 @@ export const LOCATION_COORDS = {
     "Valentia Island": [51.9056, -10.3544],
     "Killarney (INEC)": [52.0435, -9.5110],
     "Killarney (race fixture)": [52.0465, -9.5116],
-    "Skellig Coast (Tech Amergin + окрестности)": [51.8315, -10.1685]
+    "Skellig Coast (Tech Amergin + окрестности)": [51.8315, -10.1685],
+    "Fenit": [52.2789, -9.8617],
+    "Killarney (Fitzgerald Stadium)": [52.0580, -9.5100],
+    "Tralee (Austin Stack Park)": [52.2700, -9.7050]
 };

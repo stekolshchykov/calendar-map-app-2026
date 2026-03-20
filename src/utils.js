@@ -31,12 +31,13 @@ const scaleWeight = {
     "S": 1
 };
 
-export const calculateDemand = (date) => {
+export const calculateDemand = (date, weatherData = null) => {
     const { events, holidays, markets } = getEventsForDate(date);
+    const dateStr = date.toISOString().split('T')[0];
+    const weather = weatherData?.[dateStr];
 
     let score = 0;
 
-    // if an event has a fit score, let's heavily weight it.
     events.forEach(e => {
         if (e.food_truck_fit_score) {
             if (e.food_truck_fit_score >= 90) score += 4;
@@ -53,11 +54,21 @@ export const calculateDemand = (date) => {
     score += holidays.length * 2;
     score += markets.length * 1;
 
+    // Weather penalty
+    if (weather) {
+        // Rain > 5mm or Wind > 40km/h is a major deterrent for outdoor events
+        if (weather.precipitation > 5 || weather.windMax > 40) {
+            score = Math.floor(score * 0.4); 
+        } else if (weather.precipitation > 2 || weather.windMax > 25) {
+            score = Math.floor(score * 0.7);
+        }
+    }
+
     if (score === 0) return 0;
     if (score === 1) return 1;
     if (score <= 3) return 2;
     if (score <= 5) return 3;
-    return 4; // Max demand
+    return 4;
 };
 
 export const getLocationsForDate = (date) => {

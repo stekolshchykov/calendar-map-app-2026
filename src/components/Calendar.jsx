@@ -34,7 +34,7 @@ const Calendar = ({ selectedDate, onSelectDate, weatherData }) => {
                                         return <div key={idx} className="day-cell empty"></div>;
                                     }
 
-                                    const demand = calculateDemand(day);
+                                    const demand = calculateDemand(day, weatherData);
                                     const isSelected = selectedDate && format(day, 'yyyy-MM-dd') === format(selectedDate, 'yyyy-MM-dd');
                                     const dateStr = format(day, 'yyyy-MM-dd');
                                     const weather = weatherData?.[dateStr];

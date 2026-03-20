@@ -54,6 +54,21 @@ const MapBoundsAggregator = ({ locations, activeLocationId }) => {
     return null;
 };
 
+// Fixes Leaflet tiles not loading after container resize (mobile)
+const ResizeHandler = () => {
+    const map = useMap();
+    useEffect(() => {
+        const handleResize = () => {
+            setTimeout(() => map.invalidateSize(), 200);
+        };
+        window.addEventListener('resize', handleResize);
+        // Also trigger on mount in case the container was hidden
+        handleResize();
+        return () => window.removeEventListener('resize', handleResize);
+    }, [map]);
+    return null;
+};
+
 const KerryMap = ({ locations, activeLocationId, onLocationSelect }) => {
     const kerryCenter = [52.1545, -9.5669];
 
@@ -82,6 +97,7 @@ const KerryMap = ({ locations, activeLocationId, onLocationSelect }) => {
                 />
 
                 <MapBoundsAggregator locations={locations} activeLocationId={activeLocationId} />
+                <ResizeHandler />
 
                 {Array.from(markersMap.entries()).map(([locName, data], idx) => {
                     const isActive = data.items.some(i => i.id === activeLocationId);
