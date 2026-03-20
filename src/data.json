@@ -1,0 +1,723 @@
+{
+    "meta": {
+        "region": "County Kerry, Ireland",
+        "year": 2026,
+        "generated_local_date": "2026-03-20"
+    },
+    "public_holidays": [
+        {
+            "date": "2026-01-01",
+            "name": "New Year's Day",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-02-02",
+            "name": "St Brigid’s Day",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-03-17",
+            "name": "St Patrick’s Day",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-04-06",
+            "name": "Easter Monday",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-05-04",
+            "name": "May Day Bank Holiday",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-06-01",
+            "name": "June Bank Holiday",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-08-03",
+            "name": "August Bank Holiday",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-10-26",
+            "name": "October Bank Holiday",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-12-25",
+            "name": "Christmas Day",
+            "source": "WRC/CitizensInformation"
+        },
+        {
+            "date": "2026-12-26",
+            "name": "St Stephen’s Day",
+            "source": "WRC/CitizensInformation"
+        }
+    ],
+    "markets": [
+        {
+            "id": "market_killarney",
+            "name": "Killarney Country Market",
+            "location": "Killarney",
+            "day_of_week": "Friday",
+            "time": "10:00-14:00"
+        },
+        {
+            "id": "market_tralee",
+            "name": "Tralee Farmers Market",
+            "location": "Tralee",
+            "day_of_week": "Saturday",
+            "time": "11:00-15:00"
+        },
+        {
+            "id": "market_dingle",
+            "name": "Dingle Market",
+            "location": "Dingle",
+            "day_of_week": "Friday",
+            "time": "09:00-14:00"
+        },
+        {
+            "id": "market_kenmare",
+            "name": "Kenmare Market",
+            "location": "Kenmare",
+            "day_of_week": "Wednesday",
+            "time": "09:00-17:00"
+        }
+    ],
+    "events": [
+        {
+            "id": "e1",
+            "name": "Biddy’s Day",
+            "start_date": "2026-01-30",
+            "end_date": "2026-02-02",
+            "location": "Killorglin",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e2",
+            "name": "St Brigid’s Day (public holiday)",
+            "start_date": "2026-02-02",
+            "end_date": "2026-02-02",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 60
+        },
+        {
+            "id": "e3",
+            "name": "Tralee Valentine’s 10 Mile Road Race",
+            "start_date": "2026-02-14",
+            "end_date": "2026-02-14",
+            "location": "Tralee",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e4",
+            "name": "Scoil Cheoil an Earraigh (spring music school)",
+            "start_date": "2026-02-18",
+            "end_date": "2026-02-22",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "S-M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 65
+        },
+        {
+            "id": "e5",
+            "name": "The Gathering Festival of Music & the Arts",
+            "start_date": "2026-03-04",
+            "end_date": "2026-03-08",
+            "location": "Killarney (INEC)",
+            "crowd": {
+                "scale": "M-L"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 70
+        },
+        {
+            "id": "e6",
+            "name": "St Patrick’s Festival Killarney",
+            "start_date": "2026-03-14",
+            "end_date": "2026-03-17",
+            "location": "Killarney",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 90
+        },
+        {
+            "id": "e7",
+            "name": "St Patrick’s Day Parade (start 2pm)",
+            "start_date": "2026-03-17",
+            "end_date": "2026-03-17",
+            "location": "Killarney",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 95,
+            "time": "14:00"
+        },
+        {
+            "id": "e8",
+            "name": "St Patrick’s Day Parade (start 12 noon)",
+            "start_date": "2026-03-17",
+            "end_date": "2026-03-17",
+            "location": "Tralee",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 95,
+            "time": "12:00"
+        },
+        {
+            "id": "e9",
+            "name": "Animation Dingle",
+            "start_date": "2026-03-19",
+            "end_date": "2026-03-21",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e10",
+            "name": "Skellig Coast Dark Sky Festival",
+            "start_date": "2026-03-20",
+            "end_date": "2026-03-22",
+            "location": "Skellig Coast (Tech Amergin + окрестности)",
+            "crowd": {
+                "scale": "S-M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 65
+        },
+        {
+            "id": "e11",
+            "name": "Easter Monday (public holiday)",
+            "start_date": "2026-04-06",
+            "end_date": "2026-04-06",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e12",
+            "name": "Féile na Bealtaine",
+            "start_date": "2026-04-30",
+            "end_date": "2026-05-04",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e13",
+            "name": "Rally of the Lakes (May Bank Holiday)",
+            "start_date": "2026-05-01",
+            "end_date": "2026-05-03",
+            "location": "Killarney",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 90
+        },
+        {
+            "id": "e14",
+            "name": "May Day (public holiday)",
+            "start_date": "2026-05-04",
+            "end_date": "2026-05-04",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e15",
+            "name": "Kingdom County Show",
+            "start_date": "2026-05-09",
+            "end_date": "2026-05-10",
+            "location": "Tralee (Ballymacthomas)",
+            "crowd": {
+                "scale": "M-L",
+                "known_value": 4000
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 95
+        },
+        {
+            "id": "e16",
+            "name": "Killarney races (May meeting)",
+            "start_date": "2026-05-10",
+            "end_date": "2026-05-12",
+            "location": "Killarney (race fixture)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e17",
+            "name": "Fleadh Cheoil Chiarraí",
+            "start_date": "2026-05-16",
+            "end_date": "2026-05-24",
+            "location": "Cahersiveen",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e18",
+            "name": "Listowel Writers’ Week",
+            "start_date": "2026-05-27",
+            "end_date": "2026-05-31",
+            "location": "Listowel",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e19",
+            "name": "Ireland BikeFest",
+            "start_date": "2026-05-29",
+            "end_date": "2026-05-31",
+            "location": "Killarney",
+            "crowd": {
+                "scale": "XL",
+                "known_value": 50000
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 100
+        },
+        {
+            "id": "e20",
+            "name": "Listowel Races (Whitsun Weekend)",
+            "start_date": "2026-05-30",
+            "end_date": "2026-06-01",
+            "location": "Listowel",
+            "crowd": {
+                "scale": "M-L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e21",
+            "name": "June Bank Holiday (public holiday)",
+            "start_date": "2026-06-01",
+            "end_date": "2026-06-01",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e22",
+            "name": "Dingle Adventure Race",
+            "start_date": "2026-06-06",
+            "end_date": "2026-06-06",
+            "location": "Dingle Peninsula",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 90
+        },
+        {
+            "id": "e23",
+            "name": "Con Curtin Music Festival",
+            "start_date": "2026-06-26",
+            "end_date": "2026-06-28",
+            "location": "(Kerry)",
+            "crowd": {
+                "scale": "S-M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 70
+        },
+        {
+            "id": "e24",
+            "name": "Ring of Kerry Charity Cycle",
+            "start_date": "2026-07-04",
+            "end_date": "2026-07-04",
+            "location": "Killarney / Ring of Kerry",
+            "crowd": {
+                "scale": "L",
+                "known_value": 5000
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 95
+        },
+        {
+            "id": "e25",
+            "name": "The Atlantic Wave Festival",
+            "start_date": "2026-07-10",
+            "end_date": "2026-07-12",
+            "location": "Ballybunion",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e26",
+            "name": "Killarney races (July festival meet)",
+            "start_date": "2026-07-13",
+            "end_date": "2026-07-17",
+            "location": "Killarney (race fixture)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 90
+        },
+        {
+            "id": "e27",
+            "name": "Sneem Summer Festival",
+            "start_date": "2026-07-15",
+            "end_date": "2026-07-19",
+            "location": "Sneem",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e28",
+            "name": "CMAF (Music & Arts Festival)",
+            "start_date": "2026-07-31",
+            "end_date": "2026-08-03",
+            "location": "Cahersiveen",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e29",
+            "name": "August Bank Holiday (public holiday)",
+            "start_date": "2026-08-03",
+            "end_date": "2026-08-03",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 90
+        },
+        {
+            "id": "e30",
+            "name": "Dingle Racing Festival",
+            "start_date": "2026-08-07",
+            "end_date": "2026-08-09",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "M-L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e31",
+            "name": "Puck Fair",
+            "start_date": "2026-08-10",
+            "end_date": "2026-08-12",
+            "location": "Killorglin",
+            "crowd": {
+                "scale": "L-XL"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 95
+        },
+        {
+            "id": "e32",
+            "name": "Rose of Tralee International Festival",
+            "start_date": "2026-08-14",
+            "end_date": "2026-08-18",
+            "location": "Tralee",
+            "crowd": {
+                "scale": "XL",
+                "known_value": 100000
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 100
+        },
+        {
+            "id": "e33",
+            "name": "Killarney races (August meeting)",
+            "start_date": "2026-08-20",
+            "end_date": "2026-08-22",
+            "location": "Killarney (race fixture)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e34",
+            "name": "Kenmare Arts Festival",
+            "start_date": "2026-08-21",
+            "end_date": "2026-08-29",
+            "location": "Kenmare",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e35",
+            "name": "K-Visual 2026",
+            "start_date": "2026-09-04",
+            "end_date": "2026-09-06",
+            "location": "Killorglin",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e36",
+            "name": "Dingle Marathon (Full/Half)",
+            "start_date": "2026-09-05",
+            "end_date": "2026-09-05",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e37",
+            "name": "Tralee 10K",
+            "start_date": "2026-09-12",
+            "end_date": "2026-09-12",
+            "location": "Tralee",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e38",
+            "name": "Listowel International Storytelling Festival",
+            "start_date": "2026-09-17",
+            "end_date": "2026-09-20",
+            "location": "Listowel",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e39",
+            "name": "Culture Night Kerry",
+            "start_date": "2026-09-18",
+            "end_date": "2026-09-18",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "M-L"
+            },
+            "weather_risk": "medium",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e40",
+            "name": "Listowel Harvest Festival (Races)",
+            "start_date": "2026-09-20",
+            "end_date": "2026-09-26",
+            "location": "Listowel",
+            "crowd": {
+                "scale": "XL",
+                "known_value": 90000
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 100
+        },
+        {
+            "id": "e41",
+            "name": "Dingle Food Festival (first weekend of October)",
+            "start_date": "2026-10-02",
+            "end_date": "2026-10-04",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "L",
+                "known_value": 10000
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 100
+        },
+        {
+            "id": "e42",
+            "name": "Killarney races (October meeting)",
+            "start_date": "2026-10-04",
+            "end_date": "2026-10-05",
+            "location": "Killarney (race fixture)",
+            "crowd": {
+                "scale": "M-L"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 85
+        },
+        {
+            "id": "e43",
+            "name": "Kerry International Film Festival",
+            "start_date": "2026-10-15",
+            "end_date": "2026-10-18",
+            "location": "Killarney",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 70
+        },
+        {
+            "id": "e44",
+            "name": "Patrick O’Keeffe Traditional Music Festival",
+            "start_date": "2026-10-22",
+            "end_date": "2026-10-26",
+            "location": "Castleisland",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e45",
+            "name": "Tralee Half Marathon",
+            "start_date": "2026-10-25",
+            "end_date": "2026-10-25",
+            "location": "Tralee",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e46",
+            "name": "October Bank Holiday (public holiday)",
+            "start_date": "2026-10-26",
+            "end_date": "2026-10-26",
+            "location": "(по графству)",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "high",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e47",
+            "name": "National Circus Festival of Ireland",
+            "start_date": "2026-11-05",
+            "end_date": "2026-11-08",
+            "location": "Tralee",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e48",
+            "name": "Sneem International Folklore & Storytelling Festival",
+            "start_date": "2026-11-06",
+            "end_date": "2026-11-08",
+            "location": "Sneem",
+            "crowd": {
+                "scale": "S-M"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 70
+        },
+        {
+            "id": "e49",
+            "name": "Design Kenmare",
+            "start_date": "2026-11-13",
+            "end_date": "2026-11-15",
+            "location": "Kenmare",
+            "crowd": {
+                "scale": "S-M"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 60
+        },
+        {
+            "id": "e50",
+            "name": "Dingle Literary Festival",
+            "start_date": "2026-11-20",
+            "end_date": "2026-11-22",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 75
+        },
+        {
+            "id": "e51",
+            "name": "Other Voices",
+            "start_date": "2026-11-28",
+            "end_date": "2026-12-01",
+            "location": "Dingle",
+            "crowd": {
+                "scale": "M"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 80
+        },
+        {
+            "id": "e52",
+            "name": "Christmas in Killarney",
+            "start_date": "2026-12-01",
+            "end_date": "2026-12-31",
+            "location": "Killarney",
+            "crowd": {
+                "scale": "L"
+            },
+            "weather_risk": "very_high",
+            "food_truck_fit_score": 85
+        }
+    ]
+}
