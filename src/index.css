@@ -638,7 +638,8 @@ header {
   }
 
   .leaflet-container {
-    height: 100% !important;
+    height: 300px !important;
+    min-height: 300px !important;
     width: 100% !important;
   }
 
