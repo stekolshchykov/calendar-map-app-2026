@@ -59,7 +59,7 @@ const ResizeHandler = () => {
     const map = useMap();
     useEffect(() => {
         const handleResize = () => {
-            setTimeout(() => map.invalidateSize(), 200);
+            setTimeout(() => map.invalidateSize(), 500);
         };
         window.addEventListener('resize', handleResize);
         // Also trigger on mount in case the container was hidden

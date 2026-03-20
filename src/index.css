@@ -637,9 +637,14 @@ header {
     height: 300px;
   }
 
-  .right-panel {
-    min-width: unset;
-    min-height: 400px;
+  .leaflet-container {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .sidebar {
+    height: auto;
+    max-height: 500px;
   }
 
   header {

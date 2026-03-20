@@ -33,7 +33,8 @@ function App() {
     <div className="app-container">
       <header>
         <div className="header-text">
-          <h1>Kerry 2026 Interactive Explorer</h1>
+          <h1>Kerry 2026 <span className="title-accent">Explorer</span></h1>
+          <div className="ready-badge">Strategy & Weather 2026 Ready</div>
           <p>Discover the most vibrant events, markets, and hotspots in County Kerry.</p>
         </div>
         <button
